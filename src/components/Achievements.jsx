@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 
 // Sample achievements data

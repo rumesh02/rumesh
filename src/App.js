@@ -7,9 +7,7 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import AnimatedBackground from "./components/AnimatedBackground";
 import FloatingElements from "./components/FloatingElements";
-import ParticleEffects from "./components/ParticleEffects";
 import MouseTrail from "./components/MouseTrail";
-import Enhanced3DEffects from "./components/Enhanced3DEffects";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 
 function AppContent() {
