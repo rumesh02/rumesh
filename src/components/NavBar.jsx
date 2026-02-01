@@ -23,10 +23,6 @@ export default function NavBar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const onLinkClick = () => {
-    setOpen(false);
-  };
-
   const handleNavClick = (e, href) => {
     e.preventDefault();
     const targetId = href.substring(1); // Remove the '#' from href

@@ -104,6 +104,7 @@ export default function Home() {
               <a 
                 href="https://github.com/rumesh02" 
                 target='_blank'
+                rel="noreferrer"
                 className="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 transform hover:scale-110 transition-all duration-300 border border-gray-700/50 hover:border-blue-500/50"
                 aria-label="GitHub"
               >
@@ -114,6 +115,7 @@ export default function Home() {
               <a 
                 href="https://www.linkedin.com/in/rumeshthisaranga" 
                 target='_blank'
+                rel="noreferrer"
                 className="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 transform hover:scale-110 transition-all duration-300 border border-gray-700/50 hover:border-blue-500/50"
                 aria-label="LinkedIn"
               >

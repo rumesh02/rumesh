@@ -3,7 +3,6 @@ import { useTheme } from '../contexts/ThemeContext';
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false);
-  const [hoveredProject, setHoveredProject] = useState(null);
   const { isDarkMode } = useTheme();
   const ref = useRef();
 
@@ -201,8 +200,6 @@ export default function Projects() {
                   transitionDelay: `${index * 150}ms`,
                   perspective: '1000px'
                 }}
-                onMouseEnter={() => setHoveredProject(index)}
-                onMouseLeave={() => setHoveredProject(null)}
               >
                 {/* Enhanced 3D Card with multiple depth layers */}
                 <div className={`relative backdrop-blur-md rounded-3xl p-8 border shadow-2xl transition-all duration-500 h-full transform-gpu depth-layers ${
@@ -303,6 +300,7 @@ export default function Projects() {
             <a 
               href="https://github.com/rumesh02?tab=repositories"
               target='_blank'
+              rel="noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-medium hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
               View All Projects
