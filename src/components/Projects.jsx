@@ -26,49 +26,116 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Farm-to-Market (Harvest Bidding and Transport Management System)",
-      description: "A full-stack web platform enabling farmers to analyze harvest pricing and bid harvests for bidding, allowing merchants to place offers and arrange transport through registered transporters.",
-      technologies: ["React", "Node.js", "Express.js", "MongoDB", "PayHere"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-500 to-indigo-600",
-      image: "🌾"
+      id: 1,
+      title: 'Online Flower Marketplace',
+      description: 'Started as "just a simple flower store" and evolved into a full platform. Real-time inventory, payment processing, analytics—the works. Learned a lot about scale on this one.',
+      image: '/images/dinujayaFlora.png',
+      technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
+      date: 'June 2025',
+      github: '#',
+      demo: '#',
+      gradient: 'from-blue-500 to-indigo-600',
+      highlights: [
+        'Real-time inventory tracking',
+        'Advanced analytics dashboard',
+        'Payment gateway integration'
+      ]
     },
     {
-      title: "NovaNext (Automated Weighing and Packing System)",
-      description: "An automated system for weighing, dispensing, and packing goods using sensors and stepper motors, designed to streamline retail or agricultural product handling.",
-      technologies: ["Arduino", "NEMA 23", "Load Cell Sensor", "Servo Motors"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-500 to-indigo-600",
-      image: "⚖️"
+      id: 2,
+      title: 'Wellness Tracking App',
+      description: 'Built this while trying to get in shape ourselves (ironic, right?). Tracks well-being, nutrition and sleep habits. Actually use it daily.',
+      image: '/images/mindEase.png',
+      technologies: ['React Native', 'Firebase', 'HealthKit'],
+      date: 'October 2024',
+      github: '#',
+      demo: '#',
+      gradient: 'from-green-500 to-teal-600',
+      highlights: [
+        'Well-being tracking & planning',
+        'Nutrition calculator',
+        'Records sleep patterns'
+      ]
     },
     {
-      title: "Online Doctor Channeling System",
-      description: "A web-based doctor channeling system developed with Laravel, allowing patients to book appointments, view doctor schedules, and manage their medical visits efficiently.",
-      technologies: ["Laravel", "XAMPP", "MySQL", "HTML", "CSS", "JavaScript"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-500 to-indigo-600",
-      image: "🏥"
+      id: 3,
+      title: 'Handbag Marketplace',
+      description: 'Online custom handbag marketplace implemented for a local designer. Users can customize designs and order directly. Built with scalability in mind from day one.',
+      image: '/images/ella.png',
+      technologies: ['React', 'Node.js', 'MongoDB', 'AWS', 'Docker'],
+      date: 'September 2025',
+      github: '#',
+      demo: '#',
+      gradient: 'from-purple-500 to-pink-600',
+      highlights: [
+        'Custom design tool',
+        'Real-time order tracking',
+        'User-friendly admin panel'
+      ]
     },
     {
-      title: "Personal Task Manager Software",
-      description: "A simple React-based web application for managing daily tasks. Users can add, edit, delete, and mark tasks as complete. The app stores data locally, ensuring quick and easy task tracking.",
-      technologies: ["React", "JavaScript", "CSS", "LocalStorage"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-500 to-indigo-600",
-      image: "📋"
+      id: 4,
+      title: 'Inventory Management System',
+      description: 'Client hated their manual inventory management. We built them something more than Inventory Management System. Inventory + Sales CRM + Analytics Dashboard all in one.',
+      image: '/images/pasanEnterprises.png',
+      technologies: ['React', 'Node.js', 'MongoDB', 'AWS', 'PDF-Generator'],
+      date: 'August 2025',
+      github: '#',
+      demo: '#',
+      gradient: 'from-orange-500 to-red-600',
+      highlights: [
+        'Inventory tracking & alerts',
+        'Sales CRM integration + Order management',
+        'Invoice & Quotation generation'
+      ]
     },
     {
-      title: "Portfolio Website",
-      description: "A modern, space-themed portfolio website featuring dark mode, smooth animations, interactive background effects, and responsive design. Built to showcase projects and achievements.",
-      technologies: ["React", "Tailwind CSS", "JavaScript", "CSS3"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-500 to-indigo-600",
-      image: "💼"
+      id: 5,
+      title: 'Farm to Market Platform',
+      description: 'Built for a local agri-business to connect farmers and merchants directly. Real-time bidding, secure payments, logistics tracking. Ended up being way more complex than we thought, but that\'s how you learn.',
+      image: '/images/farmToMarket.png',
+      technologies: ['React', 'Node.js', 'MongoDB', 'PayHere', 'AWS S3', 'Socket.io', 'Google Maps API'],
+      date: 'February 2024',
+      github: '#',
+      demo: '#',
+      gradient: 'from-green-500 to-emerald-600',
+      highlights: [
+        'Real-time bidding system',
+        'Secure payment processing',
+        'Logistics & delivery tracking'
+      ]
+    },
+    {
+      id: 7,
+      title: 'Supermarket Automation System',
+      description: 'Sensors → Data → Predictions → Efficient Supermarket Operations. This project got us more into hardware. Enter what you need and in next minutes it\'s in your hand, sealed packed. Pretty cool right?',
+      image: '/images/hardwareProject.png',
+      technologies: ['Arduino', 'Nema', 'Load Cell', 'Temperature Sensor', 'LCD Display'],
+      date: 'May 2023',
+      github: '#',
+      demo: '#',
+      gradient: 'from-cyan-500 to-blue-600',
+      highlights: [
+        'Real-time sensor monitoring',
+        'Automated restocking alerts',
+        'Automated dispensing, packaging & sealing'
+      ]
+    },
+    {
+      id: 8,
+      title: 'PharmaSys',
+      description: 'Built this for a local medicine disributor to manage inventory, suppliers and pharmacy orders. Integrated with invoices and reports generation. Turned out to be a great learning experience about the pharma supply chain.',
+      image: '/images/pharmaSys.png',
+      technologies: ['React', 'Node', 'MongoDB', 'AWS', 'PDF Generator'],
+      date: 'December 2024',
+      github: '#',
+      demo: '#',
+      gradient: 'from-indigo-500 to-purple-600',
+      highlights: [
+        'Inventory & supplier management',
+        'Pharmacy management',
+        'Invoice & report generation'
+      ]
     }
   ];
 
@@ -150,12 +217,18 @@ export default function Projects() {
                   {/* 3D border effect - behind content */}
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400/20 via-transparent to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10"></div>
 
-                  {/* Project Icon/Image with enhanced 3D effect and better visibility */}
-                  <div className={`relative z-20 w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg ring-2 ring-white/20`}>
-                    <span className="relative z-30 text-3xl transform group-hover:scale-110 transition-transform duration-300 drop-shadow-lg filter brightness-125 contrast-125">{project.image}</span>
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} rounded-2xl blur opacity-60 group-hover:opacity-90 transition-opacity duration-300 -z-10`}></div>
-                    {/* Additional glow for better visibility */}
-                    <div className="absolute inset-0 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors duration-300 -z-10"></div>
+                  {/* Project Image with enhanced 3D effect */}
+                  <div className={`relative z-20 w-full h-48 bg-gradient-to-br ${project.gradient} rounded-2xl overflow-hidden mb-6 group-hover:scale-105 transition-all duration-300 shadow-lg ring-2 ${isDarkMode ? 'ring-white/10' : 'ring-gray-200/50'}`}>
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect width="100" height="100" fill="%23ddd"/%3E%3Ctext x="50" y="50" font-size="16" text-anchor="middle" dy=".3em" fill="%23999"%3ENo Image%3C/text%3E%3C/svg%3E';
+                      }}
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}></div>
                   </div>
 
                   {/* Content */}
